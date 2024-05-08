@@ -1,9 +1,3 @@
-
-# Program: Student Marks Calculation App
-# Purpose: Allows the user to enter a list of marks for students and do calculations such as mean, median, mode, and skewness.
-# Author: Rafael Gomes de Oliveira    
-# Date Programmed: 04/05/2024
-
 # Function to calculate the mean of the numbers.
 def calculate_mean(numbers):
 # Calculate the sum of all numbers and divide by the count of numbers
