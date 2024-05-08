@@ -1,1 +1,2 @@
 # CS4051-Students-Marks-Calculation-App
+The Student Marks Calculation Application is a Python program designed to assist users in calculating various statistics, such as mean, median, mode, and skewness, based on a set of student marks. The application allows users to input marks either manually or by reading them from a file. It ensures input validation to handle both individual marks and comma-separated lists of marks. Additionally, the program provides options to enter new sets of numbers or add more numbers to the existing set.
