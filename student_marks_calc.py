@@ -78,7 +78,7 @@ def read_numbers_from_file(filename):
                 line = line.strip()
                 if line:
                     numbers.extend(map(int, line.split(',')))
-            print(f"The numbers read from the file '{filename}' are: ", numbers)
+            print(f"\nThe numbers read from the file '{filename}' are: ", numbers)
             return numbers
     except FileNotFoundError:
         print("File not found.")
@@ -114,7 +114,8 @@ def main():
         print("4. Find the skewness of the numbers")
         print("5. Enter a NEW set of numbers")
         print("6. Enter MORE numbers to your current set")
-        print("7. Exit the application\n")
+        print("7. READ a new file")
+        print("8. Exit the application\n")
         
         choice = input("Enter the number of your choice: ")
         if choice == '1':
@@ -151,6 +152,11 @@ def main():
             numbers += new_numbers # Add the new numbers to the current set
             print("Your current list of numbers are: ", numbers) # print the new current set of numbers
         elif choice == '7':
+            filename = input("Please, enter the full name of your new text file: ")
+            numbers_from_file = read_numbers_from_file(filename) #calling the function to read the numbers from a file
+            if numbers_from_file:
+                numbers.extend(numbers_from_file)
+        elif choice == '8':
             print("\nEXITING THE APPLICATION!\n\n") # Exit the application message
             break # Break and exit the application message
         else:
